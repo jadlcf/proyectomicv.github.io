@@ -1,0 +1,181 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="stylesheet" href="CSS/Id_style.css">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <title>Proyecto Mi CV</title>
+</head>
+<body>
+    <div class="header">
+        <img id="MyFotoId" src="FotoId.jpg" alt="CV Daverio Jorge"
+        style="float:right" height="120px" width="150px"/>
+        <div id="miId" class="Id">
+          <span class="cerrar">&times;</span>
+          <img class="id-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <script src="JS/Id.js"></script>
+        <h4 id="infcv">Curriculum Vitae</h4>
+        <h1 id="inf1">DAVERIO JORGE</h1>
+        <div class="flex-container">
+          <button type="button" id="boton_ocultar" style="display:none">Ocultar CV</button>
+          <button type="button" id="boton_mostrar" style="display:block">Mostrar CV Completo</button>
+          <button type="button" id="imprimir" style="display:block">Imprimir CV</button>
+          <button type="button" id="form_contacto" style="display:block">Propuesta Laboral</button>
+        </div>
+        <script src="JS/mostrar_todo.js"></script>
+        <script src="JS/ocultar_todo.js"></script>        
+        <script src="JS/Imprimir.js"></script>
+        <script src="JS/formulario.js"></script>
+    </div>
+    <div>
+        <div id="formu_container" class="formu-container">
+          <div class="formu">
+            <div class="flex_container">
+              <button id="close_form">X</button>
+            </div>
+            <script src="JS/formulario.js"></script>
+            <h1>Enviar Propuesta Laboral</h1>
+            <form id="form_prop" method="post">
+              <ul>
+              <p><label for="Empresa">Empresa: </label></p>
+              <input type="text" id="Empresa" name="Empresa" required>
+              <p><label for="Contacto">Contacto: </label></p>
+              <input type="text" id="Contacto" name="Contacto" required>
+              <p><label for="Telefono">Telefono de Contacto: </label></p>
+              <input type ="tel" id="Telefono" name="Telefono" required>
+              <p><label for="Puesto">Puesto Ofrecido: </label></p>
+              <input type="text" id="Puesto" name="Puesto" required>
+              <p><label for="Fecha">Fecha de Entrevista: </label></p>
+              <input type ="date" id="Fecha" name="Fecha" required>
+              <p><label for="Hora">Hora de Entrevista: </label></p>
+              <input type ="datetime" id="Hora" name="Hora" required>
+              <p><label for="Lugar">Lugar de Entrevista: </label></p>
+              <input type ="text" id="Lugar" name="Lugar" required>
+              <p><input type="submit" value="Enviar"></p>
+            </ul>
+            </form>
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-3 menu">
+          <ul>
+            <li button type="button" id="boton_perfil" style="display:block"><h3>PERFIL LABORAL</h3></button></li>
+            <li button type="button" id="boton_perfiloff" style="display:none"><h3>PERFIL LABORAL</h3></button></li>
+                <p id="inf_perfil" style="display:none">Puedo identificar las necesidades
+                    soluciones eficaces y me
+                    comprometo a brindar un servicio
+                    de alta calidad que garantice una
+                    experiencia positiva.</p>
+              <script src="JS/mostrar.js"></script>
+              <script src="JS/ocultar.js"></script>
+            <li button type="button" id="boton_acerca" style="display:block"><h3>ACERCA DE MI</h3></li>
+            <li button type="button" id="boton_acercaoff" style="display:none"><h3>ACERCA DE MI</h3></button></li>
+              <ul id="inf_Acerca" style="display:none">
+                <p>o Buena predisposición</p>
+                <p>o Ordenado y bien organizado</p>
+                <p>o Motivado por la resolución de problemas</p>
+                <p>o Trabajador independiente</p>
+                <p>o Cumplimiento de fechas de entrega</p>
+                <p>o Colaborador y eficiente</p>
+              </ul>
+              <script src="JS/ocultar.js"></script>
+              <script src="JS/mostrar.js"></script>
+            <li button type="button" id="boton_contacto" style="display:block"><h3> INFORMACION DE CONTACTO</h3></li>
+            <li button type="button" id="boton_contactooff" style="display:none"><h3>INFORMACION DE CONTACTO</h3></button></li>
+            <ul id="inf_Contacto" style="display:none">
+                <p>Mza 42 Lote 7 B° Saint Germain
+                    Santiago del Estero - Capital
+                    Argentina</p>
+                <p>jdcorp2212@gmail.com</p>
+                <p>(0385) 4022014</p>
+            </ul>
+            <script src="JS/ocultar.js"></script>
+            <script src="JS/mostrar.js"></script>
+            <li button type="button" id="boton_idiomas" style="display:block"><h3>IDIOMAS</h3></li>
+            <li button type="button" id="boton_idiomasoff" style="display:none"><h3>IDIOMAS</h3></button></li>
+              <ul id="inf_Idiomas" style="display:none">
+                <p>Ingles</p>
+              </ul>
+            <script src="JS/ocultar.js"></script>
+            <script src="JS/mostrar.js"></script>
+          </ul>
+        </div>
+        <div class="col-9 menu">
+         <ul>
+          <li button type="button" id="boton_exp1" style="display:block"><h2>EXPERIENCIA LABORAL</h2></li>
+          <li button type="button" id="boton_exp1off" style="display:none"><h2>EXPERIENCIA LABORAL</h2></button></li>
+          <ul id="exp1" style="display:none">
+            <h5>Administrativo – Sector Archivos may 2010 – feb 2011</h5>
+            <p>Cooperativa de Trabajo Sercoop Ltda, Santiago del Estero</p>
+            <p>Encargado de administrar, organizar y confeccionar informes sobre el Archivo
+                general de la empresa (Legajos, Recibos de Sueldos, Facturas, Recibos, etc)</p>
+            <h5>Administrativo – Sector Finanzas feb 2011 – sep 2021</h5>
+            <p>Cooperativa de Trabajo Sercoop Ltda, Santiago del Estero</p>
+            <p>Encargado de la Administración Financiera de la empresa.
+                Tareas real izadas,</p>
+                <p>o Confección de informes de Ingresos y Egresos Diarios</p>
+                <p>o Arqueos de Cajas Diarios</p>
+                <p>o Presupuestos Mensuales</p>
+                <p>o Informes para confección de Balances.</p>
+                <p>o Manejo y administración d cuentas bancarias (Depósitos, Extracciones,
+                    Transferencias, Operatoria con Cheques, etc)</p>
+                <p>o Responsable de Pagos (Proveedores, Servicios, Sueldos, etc)</p>
+            <h5>Encargado – Sector Administrativo jun 2018 – sep 2021</h5>
+            <p>Cooperativa de Trabajo Sercoop Ltda, Santiago del Estero
+                Encargado Administrativo
+                Tareas real izadas,</p>
+                <p>Encargado de la Administración Financiera de la Empresa.</p>
+                <p>Encargado del Sector de Facturación</p>
+                    <p>o Confección de Facturas tanto impresas como electrónicas.</p>
+                    <p>o Confección de detal les de facturación</p>
+                    <p>o Confección de informes para el Seguro de los Asociados</p>
+                    <p>o Confección de informes de control de asociados y empresas.</p>
+                    <p>o Manejo del Sistema Informático de la Empresa (Altas, Bajas, Modificaciones,
+                        Recibos de Sueldos, etc)</p>
+                <p>Encargado de Sector Aportes</p>
+                    <p>o Alta y Bajas en el Monotributo (AFIP).</p>
+                    <p>o Confección de Veps.</p>
+                    <p>o Recategorización de los Asociados</p>
+                <p>Encargado del Sector Salud</p>
+                    <p>o Recepción, control y confección de informes sobre Prestaciones de Salud de
+                        los Asociados.</p>
+                    <p>o Pago a Prestadores (Sanatorios, Farmacias, Especial istas, etc).</p>
+          </ul>
+          <script src="JS/ocultar.js"></script>
+          <script src="JS/mostrar.js"></script>
+          <li button type="button" id="boton_exp2" style="display:block"><h2>ESTUDIOS Y CERTIFICACIONES</h2></li>
+          <li button type="button" id="boton_exp2off" style="display:none"><h2>ESTUDIOS Y CERTIFICACIONES</h2></li>
+          <ul id="exp2" style="display:none">
+            <h5>Curso de Diseño Gráfico ene 2010 – jun 2010</h5>
+            <p>INI Computación, Santiago del Estero</p>
+            <p>Manejo de Software de Diseño</p>
+                <p>o Corel Draw</p>
+                <p>o Photoshop</p>
+                <p>o In Desing</p>
+            <h5>Curso de Armado y Reparación de PC jun 2012 –dic 2012</h5>
+            <p>Universidad Catól ica de Santiago del Estero, Santiago del Estero</p>
+          </ul>
+          <script src="JS/ocultar.js"></script>
+          <script src="JS/mostrar.js"></script>
+          <li button type="button" id="boton_exp3" style="display:block"><h2>DESTREZAS</h2></li>
+          <li button type="button" id="boton_exp3off" style="display:none"><h2>DESTREZAS</h2></li>
+          <ul id="exp3" style="display:none">
+            <p>o Microsoft Word</p>
+            <p>o Microsoft Excel</p>
+            <p>o Microsoft Power Point</p>
+            <p>o Corel Draw</p>
+            <p>o Photoshop</p>
+            <p>o Sistemas de Gestión</p>
+            <p>o Software de Edición de Video</p>
+          </ul>
+          <script src="JS/ocultar.js"></script>
+          <script src="JS/mostrar.js"></script>
+         </ul>
+        </div>
+      </div>
+</body>
+</html>
